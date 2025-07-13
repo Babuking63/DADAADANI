@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DADAADANI</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #000000, #333333);
+      color: gold;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    .container img {
+      width: 150px;
+    }
+    .subs {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+    .join-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: gold;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .timer-box {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    .note {
+      margin-top: 30px;
+      font-size: 14px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="DADAADANI Logo" />
+    <h1>DADAADANI</h1>
+    <div class="subs">50,000+ Subscribers</div>
+    <a class="join-btn" href="https://t.me/+giNtTUOE7txlZjll" target="_blank">Join Telegram Channel</a>
+    <div class="timer-box">
+      <div id="countdown">00:59</div>
+      <div>Limited Time Offer!</div>
+    </div>
+    <div class="note">
+      NOTE: This channel is only for country players.<br>
+      (Play On Your Own Risk)
+    </div>
+  </div>
+
+  <script>
+    let seconds = 59;
+    const countdown = document.getElementById("countdown");
+
+    setInterval(() => {
+      if (seconds > 0) {
+        seconds--;
+        countdown.textContent = `00:${seconds.toString().padStart(2, '0')}`;
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
